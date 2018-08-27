@@ -28,6 +28,7 @@ class String
 
   def count_sentences
 array1 = self.split
-number1 = array1.count
+number1 = array1.rekect {|n| n/empty?}
+number1.count
   end
 end
