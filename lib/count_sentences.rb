@@ -27,8 +27,8 @@ class String
   end
 
   def count_sentences
-array1 = self.split
+array1 = self.split(/[.!?]/)
 number1 = array1.reject {|n| n.empty?}.count
-
+self.split(/[.!?]/).reject {|x| x.empty?}.size
   end
 end
